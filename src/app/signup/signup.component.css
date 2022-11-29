@@ -2,9 +2,7 @@
     width: 100%;
     height: 100vh;
     font-family: 'Alkalami', serif;
-    background: rgb(63, 94, 251);
-    background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(145, 255, 128, 1) 100%);
-    padding-top: 150px;
+    padding-top: 5%;
 
 
 }

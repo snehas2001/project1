@@ -3,10 +3,9 @@
     width: 100%;
     height: 100vh;
     font-family: 'Alkalami', serif;
-    background: rgb(63, 94, 251);
-        background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(68, 224, 170, 1) 51%, rgba(18, 255, 136, 1) 100%);
+    
     width: 100vw;
-    padding-top: 150px;
+    padding-top: 5%;
     
     
 }
@@ -18,7 +17,20 @@
     width: 1200px;
     
 }
-
+.form-label{
+    color:black
+}
+.form-control{
+    padding-right: 20%;
+    padding-left: 20%;
+}
+.s{
+    color: black;
+    padding-left: 25%;
+}
+.form-control{
+    padding-left: 10%;
+}
 
 
 
@@ -71,7 +83,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #51c6d6;
+    /* background: #51c6d6; */
+    background-image: url("https://www.cxtoday.com/wp-content/uploads/2021/06/Sales-Forecasting.jpg");
+    
     border-radius: 20px 0 0 20px;
 }
 
@@ -102,5 +116,20 @@
 .input-group input{
     border-radius: 10px;
     margin-top: 24px;
+}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
 }
 

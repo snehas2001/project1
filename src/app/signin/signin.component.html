@@ -2,29 +2,30 @@
     <div class="container">
          <div class="row">
             <div class="col register-cont">
-                <div class="form-group side-group">
+                <!-- <div class="form-group side-group">
                     <span>New here?</span>
                     <p>Create a new account with us</p> 
                     <a href="javascript:void(0);" routerLink="/signup">Register</a>
-                </div>
+                </div> -->
                 </div>
             <div class="col login-sec">
                 <h2 class="text-center">Login Now</h2>
                 <form class="login-form" action="" #f="ngForm" novalidate (ngSubmit)="f.form.valid&&onSubmit()">
-                    <div class="form-group input-group">
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example3">Email address</label>
+                        <input type="email" class="form-control" name="email" id="" placeholder=" Enter your Email" [(ngModel)]="formdata.email" #email="ngModel" required >
                         
-                        <input type="email" class="form-control" name="email" id="" placeholder="Email" [(ngModel)]="formdata.email" #email="ngModel" required >
-                        
-                    </div>
+                      </div>
                     <span class="text-danger" *ngIf="this.submit&&email.errors?.['required']">
                         Email is required.
                     </span>
-                    <div class="form-group input-group">
-          
-                        <input class="form-control" type="password" name="password" placeholder="Password" id="" [(ngModel)]="formdata.password" #password="ngModel" required>
-                        
-                    </div>
-                    <span class="text-danger" *ngIf="this.submit&&password.errors?.['required']">
+                    <br/>
+
+                    <div class="form-outline mb-3">
+                        <label class="form-label" for="form3Example4">Password</label>
+                        <input class="form-control" type="password" name="password" placeholder=" Enter your Password" id="" [(ngModel)]="formdata.password" #password="ngModel" required>
+                      </div>
+        ,           <span class="text-danger" *ngIf="this.submit&&password.errors?.['required']">
                         Password is required.
                     </span>
                     <div class="form-group output-group">
@@ -39,6 +40,7 @@
                         <input type="submit" class="btn btn-login float-none" value="Login" (click)="submit=true" [disabled]="this.loading">
                     </div>
                     <div class="clearfix"></div>
+                    <p class="s">Don't have an account? <a href="" routerLink="/signup">Register</a></p>
                     
                    
                 </form>

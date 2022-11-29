@@ -4,7 +4,7 @@ h3{
 }
 body{
     background: white;
-        background-image: radial-gradient(rgb(193, 192, 192) 1px, transparent 0);
+        /* background-image: radial-gradient(rgb(193, 192, 192) 1px, transparent 0); */
         background-size: 30px 30px;
         background-position: -19px -19px;
         height: 150vh;
@@ -30,7 +30,9 @@ body{
     background-color:#3f5efb;
     color: whitesmoke;
     border-radius: 5px;
-    padding: 10px 20px 10px 20px;
+    /* padding: 10px 20px 10px 20px; */
+    padding-left: 45%;
+    padding-right: 45%;
 }
 
 .period-submit{
@@ -43,10 +45,10 @@ body{
 
 .highlight {
     border-radius: 1em 0 1em 0;
-    background-image: linear-gradient(-100deg,
+    /* background-image: linear-gradient(-100deg,
             rgba(20, 186, 241, 0.2),
             rgba(0, 98, 255, 0.7) 95%,
-            rgba(8, 165, 255, 0.1));
+            rgba(8, 165, 255, 0.1)); */
 
     margin-bottom: 20px;
 }
